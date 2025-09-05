@@ -51,10 +51,20 @@ const HeroSection = () => {
           
           {/* Social Links */}
           <div className="flex justify-center space-x-6 pt-8">
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="hover:text-primary transition-colors"
+              onClick={() => window.open('https://github.com/NaturePatil02', '_blank')}
+            >
               <Github className="h-6 w-6" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="hover:text-primary transition-colors"
+              onClick={() => window.open('https://www.linkedin.com/in/nisarg-patil02/', '_blank')}
+            >
               <Linkedin className="h-6 w-6" />
             </Button>
           </div>

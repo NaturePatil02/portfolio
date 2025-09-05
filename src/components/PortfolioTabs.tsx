@@ -18,6 +18,14 @@ const PortfolioTabs = () => {
 
   const projects = [
     {
+      title: "URL Shortener",
+      description: "A simple URL Shortener built using Node.js, Express, and MySQL. This project generates short codes for long URLs and stores them in a MySQL database. When a user visits a short URL, they are redirected to the original long URL. Features include generating unique short URLs using nanoid, storing original URL and click count in MySQL, and tracking the number of times a short URL has been clicked with REST API structure.",
+      image: "/placeholder.svg",
+      tech: ["Node.js", "Express", "MySQL", "nanoid"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/NaturePatil02/URL-Shortener"
+    },
+    {
       title: "Jiggy Bank",
       description: "Built REST APIs for savings, transactions, and product purchase modules. Integrated Spring Boot services with MySQL for secure and scalable transactions. Applied OOP principles & JDBC/Hibernate concepts for efficient database operations. Optimized queries for performance and reliability in financial transactions. ",
       image: "/placeholder.svg",
@@ -52,7 +60,7 @@ const PortfolioTabs = () => {
     {
       category: "Backend",
       icon: <Database className="h-6 w-6" />,
-      items: ["Java", "Node.js", "Express", "MySQL"]
+      items: ["Java", "Python", "Node.js", "Express", "MySQL"]
     },
     {
       category: "Design",
@@ -144,11 +152,22 @@ const PortfolioTabs = () => {
                     ))}
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm" className="bg-gradient-primary hover:shadow-glow-primary">
+                    <Button 
+                      size="sm" 
+                      className="bg-gradient-primary hover:shadow-glow-primary"
+                      onClick={() => project.liveUrl !== "#" && window.open(project.liveUrl, '_blank')}
+                      disabled={project.liveUrl === "#"}
+                    >
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
                     </Button>
-                    <Button size="sm" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                      onClick={() => project.githubUrl !== "#" && window.open(project.githubUrl, '_blank')}
+                      disabled={project.githubUrl === "#"}
+                    >
                       <Github className="h-4 w-4 mr-2" />
                       Code
                     </Button>
