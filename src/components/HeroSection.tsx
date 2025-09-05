@@ -18,17 +18,16 @@ const HeroSection = () => {
           {/* Name and Title */}
           <div className="space-y-4">
             <h1 className="text-6xl md:text-8xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Your Name
+              Nisarg Patil
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-              Full Stack Developer & UI/UX Designer
+              Software Developer
             </p>
           </div>
           
           {/* Description */}
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating beautiful, functional digital experiences that solve real-world problems. 
-            Specializing in modern web technologies and user-centered design.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            I am a software developer with internship experience at Narola Infotech, where I worked on real-time projects and gained hands-on knowledge of building applications. I have skills in Java, Python, Node.js, and SQL, and I enjoy creating and improving applications that are both efficient and reliable.
           </p>
           
           {/* CTA Buttons */}
